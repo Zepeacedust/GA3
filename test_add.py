@@ -23,3 +23,14 @@ def test_single_number_c():
 
 def test_single_number_d():
     assert add("0") == 0
+
+def test_two_number_a():
+    assert add("1,1") == 2
+
+
+def test_two_number_b():
+    assert add("1,0") == 1
+
+
+def test_two_number_c():
+    assert add("53,15") == 68
