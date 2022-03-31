@@ -1,6 +1,8 @@
+import re
+
 def add(string):
     total = 0
-    numbers = string.split(",")
+    numbers = re.split("[,\n]",string)
     for number in numbers:
         if number != "":
             total += int(number)

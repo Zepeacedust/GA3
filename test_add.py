@@ -45,3 +45,7 @@ def test_multiple_numbers_b():
 
 def test_multiple_numbers_c():
     assert add("53,15,1") == 69
+
+
+def test_newline_delimiter():
+    assert add("1,1\n1") == 3
