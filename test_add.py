@@ -24,13 +24,24 @@ def test_single_number_c():
 def test_single_number_d():
     assert add("0") == 0
 
-def test_two_number_a():
+def test_two_numbers_a():
     assert add("1,1") == 2
 
 
-def test_two_number_b():
+def test_two_numbers_b():
     assert add("1,0") == 1
 
 
-def test_two_number_c():
+def test_two_numbers_c():
     assert add("53,15") == 68
+    
+def test_multiple_numbers_a():
+    assert add("1,1,1") == 3
+
+
+def test_multiple_numbers_b():
+    assert add("1,0,1") == 2
+
+
+def test_multiple_numbers_c():
+    assert add("53,15,1") == 69
