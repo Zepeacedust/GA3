@@ -10,5 +10,6 @@ def add(string):
             if int(number) < 0:
                 negativeList.append(number)
     if negativeList != []:
-        raise ValueError("Negatives not allowed:", negativeList)
+        raise ValueError(f'Negatives not allowed: {",".join(negativeList)}')
     return total
+

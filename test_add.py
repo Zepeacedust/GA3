@@ -54,5 +54,5 @@ def test_ignore_over_1000():
     assert add("1001,2") == 2
     
 def test_grab_negative_numbers():
-    with pytest.raises(ValueError, match=r"-13"):
-        add("-13,2")
+    with pytest.raises(ValueError, match=r"Negatives not allowed: -4,-5"):
+        add("2,-4,3,-5")
