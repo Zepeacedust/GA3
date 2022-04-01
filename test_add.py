@@ -49,3 +49,6 @@ def test_multiple_numbers_c():
 
 def test_newline_delimiter():
     assert add("1,1\n1") == 3
+
+def test_ignore_over_1000():
+    assert add("1001,2") == 2
